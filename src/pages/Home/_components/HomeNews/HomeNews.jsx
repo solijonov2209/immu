@@ -1,7 +1,7 @@
 import React from 'react';
 import NewsSlider from './NewsSlider';
 import NewsList from './NewsList';
-import './newscard.scss';
+import './Newscard.scss';
 const HomeNews = () => {
   return (
     <section>

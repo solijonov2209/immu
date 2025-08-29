@@ -1,7 +1,7 @@
 import React from 'react';
 import newsData from './newsData';
 import NewsCard from './NewsCard';
-import './newscard.scss';
+import './Newscard.scss';
 
 const NewsList = () => {
   return (

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import NewsCard from './NewsCard';
 import newsData from './newsData';
-import './newscard.scss';
+import './Newscard.scss';
 
 const NewsSlider = () => {
   const [index, setIndex] = useState(0);
