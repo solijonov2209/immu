@@ -1,0 +1,220 @@
+@import '../../../../assets/styles/mixins';
+.homeNews-title {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #10131b;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.app-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+.news-card {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+
+  &.full {
+    width: 100%;
+    height: 360px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+
+    .news-card__overlay {
+      width: 100%;
+      padding: 20px;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+      color: #fff;
+    }
+
+    .news-card__title {
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 18px;
+      margin-bottom: 15px;
+      @include text-truncate(2); // yoki
+      line-height: 1.4em; // bu senga kerak
+      max-height: 2.8em;
+    }
+    .news-card__date {
+      display: flex;
+      gap: 7px;
+    }
+    .news-card__footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 16px;
+      padding-top: 15px;
+      border-top: 3px solid #ffffff80;
+    }
+  }
+
+  &.compact {
+    display: flex;
+    align-items: start;
+    width: 570px;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.09);
+    // box-shadow: 0px 2px 40px 0px rgba(69, 69, 69, 0.05);
+    margin-bottom: 10px;
+    border-radius: 12px;
+    padding-right: 12px;
+
+    .news-card__image {
+      width: 160px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 12px;
+    }
+
+    .news-card__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 15px;
+    }
+
+    .news-card__title {
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.2px;
+      color: #009688;
+
+      margin-bottom: 10px;
+      @include text-truncate(2); // yoki
+      line-height: 1.4em; // bu senga kerak
+      max-height: 2.8em;
+    }
+    .news-card__date {
+      display: flex;
+      gap: 7px;
+      font-size: 12px;
+      color: #5d6b8a;
+    }
+    .news-card__footer {
+      font-size: 13px;
+      color: #777;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid #f0f2f9;
+      padding-top: 7px;
+    }
+
+    .news-card__views {
+      display: flex;
+      gap: 7px;
+      font-size: 12px;
+      letter-spacing: 0px;
+      vertical-align: middle;
+      color: #5d6b8a;
+    }
+  }
+}
+
+.news-slider {
+  position: relative;
+  max-width: 570px;
+
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    button {
+      background: inherit;
+      border: none;
+
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .app-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .news-card.full {
+    height: 260px;
+    border-radius: 10px;
+
+    .news-card__overlay {
+      padding: 15px;
+    }
+
+    .news-card__title {
+      font-size: 16px;
+      line-height: 1.3em;
+      max-height: 2.6em;
+    }
+
+    .news-card__footer {
+      font-size: 14px;
+      padding-top: 10px;
+    }
+  }
+
+  .news-card.compact {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+
+    .news-card__image {
+      width: 100%;
+      height: 160px;
+      margin-right: 0;
+      border-radius: 10px;
+    }
+
+    .news-card__content {
+      padding-top: 10px;
+    }
+
+    .news-card__title {
+      font-size: 15px;
+      max-height: 2.6em;
+    }
+
+    .news-card__footer {
+      font-size: 12px;
+      padding-top: 6px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+    }
+
+    .news-card__views {
+      font-size: 12px;
+    }
+  }
+
+  .news-slider {
+    max-width: 100%;
+
+    &__controls {
+      gap: 10px;
+      justify-content: center;
+
+      button {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .homeNews-title {
+    font-size: 28px;
+    text-align: center;
+  }
+}

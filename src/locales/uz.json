@@ -1,0 +1,21 @@
+{
+  "home-h": "BOSH SAHIFA",
+  "about-h": "IMMU HAQIDA",
+  "article-h": "MAQOLALAR",
+  "new-h": "YANGILIKLAR",
+  "contact-h": "ALOQA",
+  "partners": {
+    "title": "Наши партнёры и клиенты"
+  },
+
+  "consultation": {
+    "title": "Seminarlar va ma’naviy rivojlanish",
+    "description": "Islom ilmlari va ma’naviy o‘sishga qaratilgan haftalik seminarlarimizda ishtirok eting. Ushbu mashg‘ulotlar sizning imoningizni mustahkamlash va kundalik hayot uchun zarur ko‘nikmalarni egallashingizga yordam beradi.",
+    "formTitle": "Bepul maslahat",
+    "formDescription": "Telefon raqamingizni qoldiring, biz siz bilan bog‘lanib kurslarimiz haqida to‘liq ma’lumot beramiz.",
+    "namePlaceholder": "Ism",
+    "phonePlaceholder": "Telefon raqami",
+    "checkbox": "Maslahat maqsadida shaxsiy ma’lumotlarimdan foydalanishga roziman.",
+    "submit": "Yuborish"
+  }
+}

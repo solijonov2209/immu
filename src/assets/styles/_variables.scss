@@ -1,0 +1,20 @@
+// COLORS
+$primary-color: #00bcd4; // Asosiy rang
+$secondary-color: #ff5722; // Ikkinchi rang
+$accent-color: #ffc107; // Ta’kidlovchi rang
+$dark-color: #212121; // Qora
+$light-color: #f5f5f5; // Oq rangga yaqin
+$text-color: #333; // Matn rangi
+$border-color: #e0e0e0; // Borderlar uchun
+
+//  CONTAINERS
+$container-width: 1200px; // asosiy content eni
+$gutter: 1rem; // ichki bo‘shliq
+//  SHADOWS
+$shadow: 0px 2px 40px 0px rgba(69, 69, 69, 0.05);
+$shadow-header: 0px 6px 12px 0px rgba(0, 0, 0, 0.1);
+//  BREAKPOINTS
+$breakpoint-phone: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-desktop: 1200px;

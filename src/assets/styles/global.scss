@@ -1,0 +1,25 @@
+// src/assets/styles/global.scss
+// @import "tailwindcss";
+@import './fonts.scss';
+@import './variables';
+@import './mixins';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+.container {
+  max-width: $container-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $gutter;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

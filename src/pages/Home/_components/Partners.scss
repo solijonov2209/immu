@@ -1,0 +1,103 @@
+.partners {
+  max-width: 1280px; /* Tailwind max-w-7xl */
+  margin: 0 auto;
+  background: #fff;
+  padding: 24px 0; /* py-6 */
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    padding: 48px 0; /* md:py-12 */
+  }
+
+  &__title {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 800; /* font-extrabold */
+    color: #111827; /* text-gray-900 */
+    margin-bottom: 24px; /* mb-6 */
+    text-align: center;
+
+    @media (min-width: 768px) {
+      font-size: 1.875rem; /* md:text-3xl */
+      margin-bottom: 48px; /* md:mb-12 */
+    }
+  }
+
+  &__container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__row {
+    display: flex;
+    white-space: nowrap;
+
+    &--reverse {
+      margin-top: 16px; /* mt-4 */
+      @media (min-width: 768px) {
+        margin-top: 32px; /* md:mt-8 */
+      }
+    }
+  }
+
+  &__card {
+    flex-shrink: 0;
+    width: 150px;
+    height: 70px;
+    margin: 0 4px;
+    background: #fff;
+    border: 1px solid #e5e7eb; /* border-gray-200 */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+
+    @media (min-width: 768px) {
+      width: 280px;
+      height: 139px;
+      margin: 0 8px;
+      border-radius: 10px;
+    }
+
+    img {
+      object-fit: contain;
+      width: 50%;
+      height: 50%;
+    }
+  }
+}
+
+/* Animatsiyalar */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+}
+
+.animate-scroll-reverse {
+  animation: scroll-reverse 25s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .animate-scroll,
+  .animate-scroll-reverse {
+    animation-duration: 15s;
+  }
+}

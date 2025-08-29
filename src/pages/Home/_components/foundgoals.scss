@@ -1,0 +1,181 @@
+.found-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 105px;
+}
+.found-img {
+  max-width: 565px;
+  height: 365px;
+  width: 100%;
+  display: block;
+}
+.found-content {
+  max-width: 564px;
+  width: 100%;
+}
+.found-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 24px;
+
+  letter-spacing: 0%;
+  color: #009688;
+}
+.found-text {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  color: #5d6b8a;
+}
+.found-link {
+  display: block;
+  width: 170px;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  background-color: #009688;
+  color: #fff;
+  transition: color 0.2s linear;
+  transition: background-color 0.2s linear;
+  border: 1px solid #009688;
+  border-radius: 16px;
+
+  &:hover {
+    background-color: #fff;
+    color: #009688;
+  }
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #2b2b2b99;
+  padding: 20px 0;
+  padding-bottom: 60px;
+  text-align: center;
+  margin-bottom: 44px;
+
+  &__item {
+    flex: 1;
+    width: 233px;
+    border-right: 1px solid #2b2b2b99;
+
+    &:first-child {
+      border-left: 1px solid #2b2b2b99;
+    }
+
+    .statistics__value {
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 60px;
+      text-align: center;
+
+      span {
+        color: #009688; // Optional for greenish highlight
+      }
+    }
+
+    .statistics__label {
+      font-size: 22px;
+      letter-spacing: 1%;
+      text-align: center;
+      margin-top: 5px;
+    }
+  }
+  .highlight {
+    color: #00b3a4;
+  }
+}
+
+/* Tablet uchun (768px dan 1024px gacha) */
+@media (max-width: 1024px) {
+  .found-wrapper {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .found-link {
+    margin: 0 auto;
+  }
+  .found-title {
+    margin: 10 auto;
+  }
+  .statistics__value {
+    font-size: 48px;
+  }
+
+  .statistics__label {
+    font-size: 20px;
+  }
+}
+
+/* Mobil uchun (480px dan 767px gacha) */
+@media (max-width: 767px) {
+  .found-wrapper {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .statistics {
+    flex-direction: column;
+    padding-bottom: 0px;
+    margin-bottom: 30px;
+
+    &__item {
+      width: 100%;
+      border-right: none;
+      border-left: none;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      border-bottom: 1px solid #2b2b2b99;
+      &:first-child {
+        border-left: none;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .statistics__value {
+      font-size: 40px;
+    }
+
+    .statistics__label {
+      font-size: 18px;
+    }
+  }
+}
+
+/* Kichik ekranlar uchun (479px va kichik) */
+@media (max-width: 479px) {
+  .found-title {
+    font-size: 20px;
+  }
+
+  .found-text {
+    font-size: 14px;
+  }
+
+  .found-link {
+    width: 150px;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .statistics__value {
+    font-size: 32px;
+  }
+
+  .statistics__label {
+    font-size: 16px;
+  }
+}

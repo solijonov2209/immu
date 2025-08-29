@@ -1,0 +1,30 @@
+{
+  "home-h": "HOME",
+  "about-h": "ABOUT IMMU",
+  "article-h": "ARTICLES",
+  "new-h": "NEWS",
+  "contact-h": "CONTACT",
+  "partners": {
+    "title": "Our Partners and Clients"
+  },
+  "ourMedia": {
+    "title": "Our Media",
+    "description": "Our team consists of seasoned professionals with extensive experience in Islamic finance and management. Each member brings a unique set of skills and expertise.",
+    "showcaseTitle": "Our media showcase",
+    "cards": {
+      "card1": "Why Islamic finance?",
+      "card2": "What makes Islamic finance unique?",
+      "card3": "How is risk managed in Islamic finance?"
+    }
+  },
+  "consultation": {
+    "title": "Workshops and Spiritual Development",
+    "description": "Participate in our weekly workshops focused on Islamic studies and spiritual growth. These sessions are designed to help you strengthen your connection with faith and acquire essential skills for daily life",
+    "formTitle": "Free consultation",
+    "formDescription": "Leave your phone number, and we will reach out to provide you with complete information about our courses.",
+    "namePlaceholder": "Name",
+    "phonePlaceholder": "Phone number",
+    "checkbox": "I agree to the use of my personal information for consultation purposes.",
+    "submit": "Submit"
+  }
+}
