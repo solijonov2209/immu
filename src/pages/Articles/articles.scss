@@ -1,0 +1,28 @@
+.article{
+  padding-top: 25px;
+  padding-bottom: 145px;
+  @media (max-width: 768px){
+    padding-top: 15px;
+    padding-bottom: 60px;
+  }
+
+  &__title{
+font-weight: 600;
+font-size: 32px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #10131B;
+margin-bottom: 46px;
+  }
+
+  &__list{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    
+  }
+}
